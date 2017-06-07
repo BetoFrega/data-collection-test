@@ -77,7 +77,6 @@
         for (var subElementIndex in produto.children) {
           if (produto.children.hasOwnProperty(subElementIndex)) {
             var element = produto.children[subElementIndex];
-            console.log(element);
             if (element.className === 'name') {
               element.innerText = faker.commerce.productName();
             } else if (element.className === 'price') {
