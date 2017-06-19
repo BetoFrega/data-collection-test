@@ -8,6 +8,20 @@ Na medida do possível, nós vamos tentar avaliar todos os aspectos possíveis d
 
 ## Instruções
 
+1. Faça um fork deste projeto.
+1. Leia as instruções de cada teste com atenção.
 1. Você pode alterar somente os arquivos de nome `tagueamento.js`.
-2. Não minifique o código ;)
-3. Algumas páginas já incluem bibliotecas, como o jQuery. Outras não. Você pode escolher injetar bibliotecas dinamicamente, mas saiba que se considerarmos esta uma solução ineficiente, sua resposta poderá ser penalizada :-o
+1. Não minifique o código. Mantenha um estilo consistente com o já existente nas páginas.
+1. Algumas páginas já incluem bibliotecas, como o jQuery. Outras não. Você pode escolher injetar bibliotecas dinamicamente, mas saiba que se considerarmos esta uma solução ineficiente, sua resposta poderá ser penalizada.
+1. Suas soluções devem funcionar no IE9.
+1. Envie sua solução como um *pull request* para este projeto. Somente serão aceitas soluções enviadas desta forma. 
+1. Lembre que o seu *pull request* pode conter alterações somente nos arquivos `tagueamento.js`.
+
+## Dicas Importantes
+
+- https://www.npmjs.com/package/http-server
+- https://api.jquery.com/
+- http://caniuse.com/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+- https://github.com/oneuijs/You-Dont-Need-jQuery
+
