@@ -5,5 +5,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery.slim" level="application" />
+    <orderEntry type="library" name="faker" level="application" />
   </component>
 </module>
