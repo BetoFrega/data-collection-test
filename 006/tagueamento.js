@@ -1,21 +1,23 @@
-buttons = document.querySelectorAll('#botoes button');
-strCount = '',
-strShow = false;
+window.onload = function() {
+	buttons = document.querySelectorAll('#botoes button');
+	strCount = '',
+	strShow = false;
 
-for (var i = 0; i < buttons.length; i++) {
-	buttons[i].addEventListener('click', function() {
-		this.setAttribute('class','counted');
-		strCount += this.innerText+', ';
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener('click', function() {
+			this.setAttribute('class','counted');
+			strCount += this.innerText+', ';
 
-		var text = this.innerText.split('-')[0];
-		console.log(text);
+			var text = this.innerText.split('-')[0];
+			console.log(text);
 
-		if (buttons.length == document.querySelectorAll('.counted').length && strShow == false) {
-			strShow = true;
-			strCount = strCount.slice(0, -2);
-			console.log(strCount);
-		}
-	});
+			if (buttons.length == document.querySelectorAll('.counted').length && strShow == false) {
+				strShow = true;
+				strCount = strCount.slice(0, -2);
+				console.log(strCount);
+			}
+		});
+	}
 }
 
 // Todos os botões da página foram armazenados na variável buttons, e em cada um destes botões foi adicionado um listener de cliques
@@ -25,4 +27,4 @@ for (var i = 0; i < buttons.length; i++) {
 // de botões "counted" seja equivalente ao total de botões, a string strCount será tratada para retirar da última vírgula e em seguida
 // será retornada ao console.
 
-// Além disso, cada clique de botão captura o primeiro trecho de seu respectivo valor (tudo o que vier antes do primeiro hífen) e retorna num console.log.
+// Além disso, cada clique de botão captura o primeiro trecho de seu respectivo valor (tudo o houver antes do primeiro hífen) e retorna num console.log.
