@@ -1,8 +1,10 @@
 'use strict'
-// From what I've read, this approach doesn't work on IE9
-// Was not able to make this one, because it's 4 AM, I gotta
-// work tomorrow and I won't be able to continue with the test
-// any other time, so, yeah, sorry
+
+// Was not able to take this one through, because it's very late, I wasn't able
+// to get IE9 in my computer to check compability and I will not be able to
+// continue the test some other time, so I guess this is as far as I can go now
+// Cheers
+
 var main = function () {
     var message = ''
     $('#mensagem').bind('DOMSubtreeModified', function () {
