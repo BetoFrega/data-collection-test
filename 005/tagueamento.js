@@ -11,12 +11,8 @@
   console.log(greenBoxValue);
 
   for(var j = 0, maxBtn = btn.length ; j < maxBtn ; j += 1) {
-    btn[j].onclick = function() {
-      console.log(this.textContent);
-      var element       = document.createElement('span');
-      element.style     = 'position:absolute;top:100px;margin-left:1em';
-      element.innerText = this.textContent;
-      this.parentNode.insertBefore(element, this);
+    btn[j].onclick = function() {      
+      console.log(greenBoxValue[this.textContent-1]);
     };
   }
 

@@ -11,11 +11,8 @@
   console.log(greenBoxValues);
 
   btn.on('click', function() {
-    console.log($(this).text());
-    var element = document.createElement('span');
-    element.style = 'position:absolute;top:100px;margin-left:1em';
-    element.appendChild(document.createTextNode($(this).text()));
-    $(this).before(element);
+    var position = $(this).text() - 1;
+    console.log(greenBoxValues[position]);
   });
 
 })(window, document, jQuery);
