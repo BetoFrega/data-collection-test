@@ -23,7 +23,9 @@
   }
 
   function logButtonNameOnClick ($event) {
-    $event.target && $event.target.nodeName === TARGET_NODE_NAME && console.log($event.target.innerText);
+    if ($event.target && $event.target.nodeName === TARGET_NODE_NAME) {
+      console.log($event.target.innerText);
+    }
   }
 
   init();
