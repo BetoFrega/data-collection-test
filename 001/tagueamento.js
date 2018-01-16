@@ -1,6 +1,6 @@
 'use strict';
 
-(function()  {
+(function ()  {
   var FATHER_ELEMENTS_ID = 'botoes';
   var BUTTON_ELEMENTS_SELECTOR = '#botoes button';
   var TARGET_NODE_NAME = 'BUTTON';
