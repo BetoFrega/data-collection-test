@@ -18,5 +18,6 @@ function eachButtonInfo() { // informação de cada botão
    $('#botoes button').each(function(i, obj) {
        var currentName = $(obj).text();
        arrayButtons.push(currentName);
+     
    });
 }
