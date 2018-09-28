@@ -16,6 +16,7 @@ Na medida do possível, nós vamos tentar avaliar todos os aspectos possíveis d
 1. Suas soluções devem funcionar no IE9.
 1. Envie sua solução como um *pull request* para este projeto. Somente serão aceitas soluções enviadas desta forma. 
 1. Lembre que o seu *pull request* pode conter alterações somente nos arquivos `tagueamento.js`.
+1. Encapsule os seus códigos. A sua solução não deve criar mais do que uma variável no escopo global (ou seja, na `window`).
 
 ## Dicas Importantes
 
@@ -24,4 +25,3 @@ Na medida do possível, nós vamos tentar avaliar todos os aspectos possíveis d
 - http://caniuse.com/
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 - https://github.com/oneuijs/You-Dont-Need-jQuery
-
