@@ -13,6 +13,14 @@ $('#botoes').find('button').on('click', function(){
 	var part = $(this).text().split('-');
 	ordem.push(part[2]);
 	console.log(ordem);
+
+	ga('send', {
+		hitType: 'event',
+		eventCategory: 'Menu',
+		eventAction: 'Menu Botões',
+		eventLabel: ordem.push(part[2])
+	});
+
 })
 
 /*

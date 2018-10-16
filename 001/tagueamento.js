@@ -5,5 +5,12 @@ $('#botoes').find('button').each(function(){
 console.log(lista);
 
 $('#botoes').find('button').on('click', function(){
-	console.log('botao clicado: ' + $(this).text());
+	console.log($(this).text());
+
+	ga('send', {
+		hitType: 'event',
+		eventCategory: 'Menu',
+		eventAction: 'Menu Botões',
+		eventLabel: $(this).text()
+	});
 })

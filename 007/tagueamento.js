@@ -13,6 +13,15 @@ document.getElementById('produtos').addEventListener("click", function(event) {
 						preco: event.target.querySelectorAll('.price')[0].textContent, 
 						sku: event.target.getAttribute('data-sku')};
 
-		console.log(produto);
+		console.log(produto.nome);
+
+		ga('send', {
+			hitType: 'event',
+			eventCategory: 'Catalogo',
+			eventAction: 'Produtos',
+			eventLabel: produto.nome,
+			eventValue: produto.price
+		});
+
 	}
 });
